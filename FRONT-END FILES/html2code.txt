@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modal</title>
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <style>
+    
+    
+   
+    
+    h3{
+        text-align:center;
+    }
+    li{
+        color: azure;
+    }
+    button{
+        font-size: 25px;
+        padding: 10px;
+        border-radius:10px ;
+        margin:20 ;
+       
+       
+    }
+    #container2{
+        
+        position: fixed;
+        left: 65%;
+        right: 100%;
+        top:30%;
+        width: 100;
+    }
+
+        
+
+    #container1{
+        position: fixed;
+        left: 20%;
+        top:30%;
+        width: 200%;
+
+
+    }
+        
+        
+       
+    
+    
+   
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body style="background-color: dodgerblue;">
+  <form action="http://127.0.0.1:5000/submit" method="post">
+    <div class="container" style="background: linear-gradient(to top, #30cfd0 0%, #330867 100%);" >
+        <h1 style="text-align: center;">Name of the Application</h1>
+        <h3 style="text-align: center;" > License plate Recognition</h3>
+    </div>
+    
+    <br>
+    
+    
+    
+<div id="container1">
+     
+    <button id="btn"><i>Start</i></button>
+    </div>
+    <br><br>
+
+   <p>
+       <br><br><br><br>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;" style="font-size: x-large;">About</h2>
+       <ul>
+           <i> <li>Vechicle theft has become serious problem in India and the Crime is growing at an excellent rate<br>  to avoid this police can use this web application in a preferable  manner.  </li>
+            <li>Using Machine Learning Image Processing technique,we grab the image of the Vechicle and process it to show the license Plate number.</li>
+            <li>This Processing is called license plate recognition.</li>
+            <li>After the license number is retrieved we search it in database and Check whether the Vechicle is stolen or Not. </li>
+        </i>   
+        </ul><br>
+      </form>
+      
+  <button data-modal-target="#modal">How to use</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">How to use</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      1.Here we have two buttons as start and new entry.<br>
+                2.When we click on start and new entry.<br>
+              3.After clicking space bar,it will automatically recognize the number plate and the details of that Vechicle shown in this details section.<br>
+                4.when we click on way entry,you can add the complaints of the Vechicle thief details.<br>
+     
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <div id="container2">
+    <button id="1" style="width:2000;"><i>Newentry</i></button>
+</div>
+</body>
+</html>
